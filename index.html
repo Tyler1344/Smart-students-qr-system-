@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Student QR Security</title>
+<script src="https://unpkg.com/html5-qrcode"></script>
+</head>
+
+<body>
+
+<h2>Scan Student ID</h2>
+
+<div id="reader" style="width:300px"></div>
+
+<script>
+
+function onScanSuccess(decodedText) {
+window.location.href = "/student/" + decodedText
+}
+
+let html5QrcodeScanner = new Html5QrcodeScanner(
+"reader", { fps: 10, qrbox: 250 });
+
+html5QrcodeScanner.render(onScanSuccess);
+
+</script>
+
+</body>
+</html>

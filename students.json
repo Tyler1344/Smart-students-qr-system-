@@ -1,0 +1,16 @@
+
+{
+ "1001": {
+  "name": "John Peter",
+  "class": "SS1",
+  "parent": "08034567890",
+  "photo": "student1.jpg"
+ },
+
+ "1002": {
+  "name": "Sarah James",
+  "class": "SS2",
+  "parent": "08056781234",
+  "photo": "student2.jpg"
+ }
+}
